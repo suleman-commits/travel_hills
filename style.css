@@ -17,7 +17,7 @@
     padding: 14px;
     background-color: #D9EFDE;
     border-radius: 20px;
-    position: fixed;
+ 
 }
 .logo-container{
     width:900px;
@@ -173,12 +173,11 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 .travel-3{
-    height: 60vh;
+    height: 70vh;
     background-image: url(img/travel-3.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
     padding: 40px;
 }
 .travel-3 p{
@@ -301,6 +300,106 @@
     animation-duration: 3s;
     animation-timing-function: ease;
 }
+
+/* Media Queries */
+@media (max-width:700px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 ;
+        
+    }
+    .logo-container{
+        padding: 0;
+        width: 400px;
+    }
+
+    .nav-links ul { 
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .hero-container {
+        flex-direction: column;
+        padding: 30px;
+        margin-left: 30px;
+    }
+
+    .hero-content {
+        width: 200px;
+    }
+   .hero-image{
+    margin-top: 40px;
+    
+   }
+   .hero-image img{
+    width:380px;
+   }
+
+    .features-container {
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+    }
+
+    .feature-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feat-item img {
+        width: 300px;
+        margin-top: 40px;
+    }
+    .feat-item p{
+        width: 250px;
+        text-align: justify;
+    }
+
+   
+
+    .testimonial-img img {
+        margin-left: 0;
+        width:100px;
+    }
+    .pra{
+        width: 280px;
+        font-size: 24px;
+    }
+
+    .travel {
+        padding: 30px;
+    }
+
+    .testimonial-img img{
+        width: 60px;
+        margin: 10px;
+        
+    }
+
+    .travel p {
+        width: 100%;
+        font-size: 24px;
+    }
+    .travel-item img{
+      width: 440px;
+        
+    }
+    .travel-item{
+        
+    }
+
+    .inner {
+        flex-direction: column;
+        margin: 0;
+    }
+    .social{
+        width: 340px;
+        
+    }
+
+    
+}
+
 
 
 
