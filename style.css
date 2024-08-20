@@ -5,10 +5,9 @@
 }
 
 .main{
+    overflow-x: hidden;
     background-color: #232E26;
     height: 100vh;
-    
-   
 }
 .nav-container{
     width:100%;
@@ -173,9 +172,9 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 .travel-3{
+    width: 100%;
     height: 70vh;
     background-image: url(img/travel-3.png);
-    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 40px;
@@ -302,102 +301,94 @@
 }
 
 /* Media Queries */
-@media (max-width:700px) {
-    .nav-container {
+@media (max-width: 600px){
+    .nav-container{
+        width: 475px;
         flex-direction: column;
         align-items: center;
-        padding: 0 ;
-        
+        padding: 10px;
     }
     .logo-container{
-        padding: 0;
         width: 400px;
-    }
-
-    .nav-links ul { 
         margin-bottom: 10px;
-        text-align: center;
     }
-    .hero-container {
+    .hero-container{
         flex-direction: column;
-        padding: 30px;
-        margin-left: 30px;
+        padding: 0;
+        margin-top: 50px;
+        margin-left: 50px;
     }
-
-    .hero-content {
-        width: 200px;
-    }
-   .hero-image{
-    margin-top: 40px;
-    
-   }
-   .hero-image img{
-    width:380px;
-   }
-
-    .features-container {
-        flex-direction: column;
-        padding: 20px;
-        align-items: center;
-    }
-
-    .feature-item {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .feat-item img {
+    .hero-content p{
         width: 300px;
-        margin-top: 40px;
+        font-size: 14px; 
+    }
+    .hero-image{
+        margin-top: 50px;
+    }
+    .hero-image img{
+        width: 360px;
+        
+    }
+    .features-container{
+        width: 475px;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .feature-item{
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .item-feature{
+        margin-left: 45px;
+    }
+    .feat-item{
+        margin-left: 40px;
     }
     .feat-item p{
-        width: 250px;
-        text-align: justify;
-    }
+        width: 280px;
+        font-size: 14px;
+        margin-bottom: 20px;
+        align-items: center;
 
-   
-
-    .testimonial-img img {
-        margin-left: 0;
-        width:100px;
     }
     .pra{
-        width: 280px;
-        font-size: 24px;
+        width: 300px;
+        font-size: 18px;
     }
-
-    .travel {
-        padding: 30px;
-    }
-
     .testimonial-img img{
         width: 60px;
-        margin: 10px;
-        
+        margin: 15px;
+        margin-left: 0;
     }
-
-    .travel p {
-        width: 100%;
-        font-size: 24px;
+    .travel p{
+        font-size: 20px;
     }
     .travel-item img{
-      width: 440px;
-        
-    }
-    .travel-item{
-        
-    }
+        margin-top: 35px;
+        width: 400px;
 
-    .inner {
+    }
+    .travel-3 p{
+        width: 300px;
+        font-size: 21px;
+    }
+    .inner{
+        width: 470px;
         flex-direction: column;
-        margin: 0;
+       margin: 0;
+       margin-left:20px ;    
     }
     .social{
-        width: 340px;
-        
+        margin-left: 70px;
+    }
+    .foot-par {
+        font-size: 12px;
+    }
+    .rights p{
+
+        font-size: 10px;
     }
 
-    
 }
 
 
