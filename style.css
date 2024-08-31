@@ -5,7 +5,7 @@
 }
 
 .main{
-    overflow-x: hidden;
+   
     background-color: #232E26;
     height: 100vh;
 }
@@ -21,8 +21,10 @@
 .logo-container{
     width:900px;
 }
-.nav-links ul li {
-    display: inline-block;
+.nav-links ul{
+    display:flex ;
+    flex-direction: row;
+
     list-style: none;
 }
 .nav-links ul li a{
@@ -35,6 +37,7 @@
     color:rgb(155, 44, 44);
 }
 .hero-container{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     border-radius: 24px;
@@ -301,94 +304,88 @@
 }
 
 /* Media Queries */
-@media (max-width: 600px){
-    .nav-container{
-        width: 475px;
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    }
-    .logo-container{
-        width: 400px;
-        margin-bottom: 10px;
-    }
-    .hero-container{
-        flex-direction: column;
-        padding: 0;
-        margin-top: 50px;
-        margin-left: 50px;
-    }
-    .hero-content p{
-        width: 300px;
-        font-size: 14px; 
-    }
-    .hero-image{
-        margin-top: 50px;
-    }
-    .hero-image img{
-        width: 360px;
-        
-    }
-    .features-container{
-        width: 475px;
-        flex-direction: column;
-        margin-top: 20px;
-    }
-    .feature-item{
-        flex-direction: column;
-        margin-top: 50px;
-    }
-    .item-feature{
-        margin-left: 45px;
-    }
-    .feat-item{
-        margin-left: 40px;
-    }
-    .feat-item p{
-        width: 280px;
-        font-size: 14px;
-        margin-bottom: 20px;
-        align-items: center;
-
-    }
-    .pra{
-        width: 300px;
-        font-size: 18px;
-    }
-    .testimonial-img img{
-        width: 60px;
-        margin: 15px;
-        margin-left: 0;
-    }
-    .travel p{
-        font-size: 20px;
-    }
-    .travel-item img{
-        margin-top: 35px;
-        width: 400px;
-
-    }
-    .travel-3 p{
-        width: 300px;
-        font-size: 21px;
-    }
-    .inner{
-        width: 470px;
-        flex-direction: column;
-       margin: 0;
-       margin-left:20px ;    
-    }
-    .social{
-        margin-left: 70px;
-    }
-    .foot-par {
-        font-size: 12px;
-    }
-    .rights p{
-
-        font-size: 10px;
-    }
-
+    @media (max-width: 600px) and (min-width: 320px) {
+        .nav-container {
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+        }
+    
+        .logo-container {
+            width: auto;
+            margin-bottom: 10px;
+        }
+        .
+        .travel-item img{
+            width: 400px;
+        }
+    
+        .hero-container {
+            flex-direction: column;
+            padding: 20px;
+            margin: 0;
+        }
+    
+        .hero-content {
+            width: 100%;
+            padding: 10px;
+        }
+    
+        .hero-content p {
+            font-size: 14px;
+            line-height: 1.4;
+        }
+    
+        .hero-image img {
+            width: 100%;
+            height: auto;
+        }
+    
+        .features-container {
+            width: 100%;
+            flex-direction: column;
+            margin-top: 20px;
+            padding: 10px;
+        }
+    
+        .feature-item {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    
+        .feat-item {
+            margin: 10px 0;
+            text-align: center;
+        }
+    
+        .testimonial-img img {
+            width: 80%;
+            margin: 15px auto;
+        }
+    
+        .travel-3 p {
+            width: 100%;
+            font-size: 18px;
+            margin: 20px auto;
+        }
+    
+        .inner {
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+        }
+    
+        .foot-par {
+            font-size: 12px;
+            padding: 10px;
+        }
+    
+        .rights p {
+            font-size: 12px;
+        }
 }
 
 
